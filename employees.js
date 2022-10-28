@@ -75,7 +75,7 @@ empOne.getSchedule()
 let empTwo = {...empOne}
 empTwo.name = 'Nick'
 
-// console.log(empTwo)
+console.log(empTwo)
 
 
 
@@ -134,8 +134,8 @@ class Manager extends Employee {
 
 //CODE HERE
 
-let manager = new Manager('Winston', 'weekday mornings, weekday afternoons', 'Cece and Schmidt')
-
+let manager = new Manager('Winston', 'weekday mornings, weekday afternoons', ['Cece', 'Schmidt'])
+console.log(manager.getEmployees())
 
 /*
     Call the `getEmployees` method on the

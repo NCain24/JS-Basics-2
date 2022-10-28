@@ -32,11 +32,11 @@
 //CODE HERE
 
 class Ticket{
-    constructor(items, orderTime, customerId, status) {
+    constructor(items, orderTime, customerId) {
         this.items = items
         this.orderTime = orderTime
         this.customerId = customerId
-        this.status = status
+        this.status = 'queued'
     }
 
     updateStatus(newStatus) {
@@ -60,6 +60,7 @@ class Ticket{
 //CODE HERE
 
 let firstTicket = new Ticket('pizza', '7:03 PM', 575)
+console.log(firstTicket)
 
 
 /*
@@ -70,5 +71,6 @@ let firstTicket = new Ticket('pizza', '7:03 PM', 575)
 
 //CODE HERE
 
+firstTicket.updateStatus('cooking')
 console.log(firstTicket.updateStatus('cooking'))
 
